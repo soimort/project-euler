@@ -1,0 +1,12 @@
+$ time python3 ./pe023.py 
+4179871
+real	0m16.403s
+user	0m16.249s
+sys	0m0.007s
+
+$ gcc -o pe023 pe023.c -std=c99 -lm
+$ time ./pe023
+4179871
+real	0m0.110s
+user	0m0.110s
+sys	0m0.000s

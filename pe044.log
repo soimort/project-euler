@@ -1,0 +1,30 @@
+$ time python pe044_1.py 
+5482660
+real	9m2.339s
+user	9m1.251s
+sys	0m0.003s
+
+$ time python pe044_2.py 
+5482660
+real	0m28.910s
+user	0m28.841s
+sys	0m0.003s
+
+$ time python2 pe044_2.py 
+5482660
+real	0m20.428s
+user	0m20.399s
+sys	0m0.000s
+
+$ time pypy pe044_2.py 
+5482660
+real	0m3.576s
+user	0m3.546s
+sys	0m0.023s
+
+$ gcc -o pe044 pe044.c -std=c99
+$ time ./pe044
+5482660
+real	0m0.234s
+user	0m0.230s
+sys	0m0.000s
